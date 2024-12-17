@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio showcasing my work, experience, and client feedback. Contact me for projects and collaborations.">
+  <meta name="keywords" content="Web Developer, Portfolio, HTML, CSS, Projects">
+  <meta name="author" content="Your Name">
+  <title>Web Code Practice</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans leading-normal text-gray-800">
+  <!-- Header Section -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="logo">
+        <h1 class="text-2xl font-bold">MyLogo</h1>
+      </div>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-500">About Me</a></li>
+          <li><a href="#works" class="hover:text-blue-500">Works</a></li>
+          <li><a href="#blog" class="hover:text-blue-500">Blog</a></li>
+          <!-- <li><a href="#contact" class="hover:text-blue-500">Contact</a></li> -->
+        </ul>
+      </nav>
+      <div>
+        <a href="#contact" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Get In Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner Section -->
+  <section id="banner" class="bg-gray-100 py-16">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h2>
+        <p class="text-lg mb-4">I am a passionate Web Developer delivering quality work and unique web experiences.</p>
+      </div>
+      <div>
+        <img src="banner-image.jpg" alt="Banner Image" class="w-full rounded-lg shadow-md" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <img src="about-image.jpg" alt="About Me" class="w-full rounded-lg shadow-md">
+      </div>
+      <div>
+        <h2 class="text-3xl font-bold mb-4">About Me</h2>
+        <p class="text-lg">I am an experienced web developer specializing in creating user-friendly websites with modern design techniques. I focus on building functional, responsive, and visually appealing websites.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Companies Worked For Section -->
+  <section id="companies" class="bg-gray-100 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Companies I Have Worked For</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <li class="text-lg font-semibold">Company 1</li>
+        <li class="text-lg font-semibold">Company 2</li>
+        <li class="text-lg font-semibold">Company 3</li>
+        <li class="text-lg font-semibold">Company 4</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- My Recent Works Section -->
+  <section id="works" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">My Recent Works</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="p-4 bg-gray-100 rounded-lg shadow">
+          <h3 class="text-2xl font-semibold mb-2">Project 1</h3>
+          <p>Description of project 1.</p>
+        </div>
+        <div class="p-4 bg-gray-100 rounded-lg shadow">
+          <h3 class="text-2xl font-semibold mb-2">Project 2</h3>
+          <p>Description of project 2.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials Section -->
+  <section id="blog" class="bg-gray-100 py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">What My Clients Say</h2>
+      <blockquote class="italic mb-4">"The best developer I've worked with. Highly recommended!" - <strong>Client 1</strong></blockquote>
+      <blockquote class="italic">"Delivered exceptional results on time." - <strong>Client 2</strong></blockquote>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-16">
+    <div class="container mx-auto max-w-lg">
+      <h2 class="text-3xl font-bold mb-6 text-center">Tell Me About Your Project</h2>
+      <form class="space-y-4">
+        <div>
+          <label for="name" class="block text-lg font-semibold">Name</label>
+          <input type="text" id="name" class="w-full p-2 border rounded" required>
+        </div>
+        <div>
+          <label for="email" class="block text-lg font-semibold">Email</label>
+          <input type="email" id="email" class="w-full p-2 border rounded" required>
+        </div>
+        <div>
+          <label for="message" class="block text-lg font-semibold">Message</label>
+          <textarea id="message" rows="5" class="w-full p-2 border rounded" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <h2 class="text-2xl font-bold">MyLogo</h2>
+      </div>
+      <div>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+      </div>
+      <div class="flex justify-center md:justify-start space-x-4">
+        <a href="#" class="hover:text-blue-400">Facebook</a>
+        <a href="#" class="hover:text-blue-400">Twitter</a>
+        <a href="#" class="hover:text-blue-400">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
